@@ -1,0 +1,98 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_name": "Chicken Stir Fry",
+        "recipe_image": "https://i.ibb.co/k3Z2rW5/Chicken-Stir-Fry-1-1-500x500.jpg",
+        "short_description": "A quick and delicious chicken stir fry with vegetables.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaves",
+            "400 g mushroom",
+            "2 bell peppers, sliced",
+            "3 cloves garlic, minced"
+        ],
+        "preparing_time": 30,
+        "calories": 320
+    },
+    {
+        "recipe_id": 2,
+        "recipe_name": "Vegetable Pasta",
+        "recipe_image": "https://i.ibb.co/qJnjKn1/VEGETABLE-PASTA-3-500x500.jpg",
+        "short_description": "A colorful pasta dish loaded with fresh vegetables.",
+        "ingredients": [
+            "300 g pasta",
+            "1 zucchini, sliced",
+            "1 bell pepper, diced",
+            "1 carrot, julienned",
+            "100 g cherry tomatoes, halved",
+            "2 tbsp olive oil"
+        ],
+        "preparing_time": 25,
+        "calories": 250
+    },
+    {
+        "recipe_id": 3,
+        "recipe_name": "Grilled Salmon",
+        "recipe_image": "https://i.ibb.co/5r1r3xZ/download.jpg",
+        "short_description": "Healthy grilled salmon with a tangy lemon marinade.",
+        "ingredients": [
+            "4 salmon fillets",
+            "1 lemon, juiced",
+            "2 tbsp olive oil",
+            "2 cloves garlic, minced",
+            "Salt and pepper to taste",
+            "Fresh parsley for garnish"
+        ],
+        "preparing_time": 20,
+        "calories": 280
+    },
+    {
+        "recipe_id": 4,
+        "recipe_name": "Caprese Salad",
+        "recipe_image": "https://i.ibb.co/HVCCF7P/caprese-salad-with-cherry-tomatoes-thumbnail-500x500.webp",
+        "short_description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil.",
+        "ingredients": [
+            "2 large tomatoes, sliced",
+            "200 g fresh mozzarella, sliced",
+            "1 bunch fresh basil leaves",
+            "2 tbsp balsamic vinegar",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": 15,
+        "calories": 200
+    },
+    {
+        "recipe_id": 5,
+        "recipe_name": "Banana Smoothie",
+        "recipe_image": "banana_smoothie.jpg",
+        "short_description": "A creamy and refreshing smoothie made with bananas and yogurt.",
+        "ingredients": [
+            "2 ripe bananas",
+            "250 ml yogurt",
+            "150 ml milk",
+            "1 tbsp honey",
+            "1/2 tsp vanilla extract",
+            "Ice cubes"
+        ],
+        "preparing_time": 10,
+        "calories": 180
+    },
+    {
+        "recipe_id": 6,
+        "recipe_name": "Vegetable Soup",
+        "recipe_image": "vegetable_soup.jpg",
+        "short_description": "A hearty vegetable soup packed with nutritious ingredients.",
+        "ingredients": [
+            "1 onion, chopped",
+            "2 carrots, diced",
+            "2 celery stalks, chopped",
+            "1 potato, diced",
+            "1 can diced tomatoes",
+            "1 liter vegetable broth"
+        ],
+        "preparing_time": 35,
+        "calories": 150
+    }
+]
