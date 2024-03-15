@@ -10,7 +10,7 @@ const AllRecipe = () => {
   }, []);
   console.log(recipes);
   return (
-    <div className=" grid grid-cols-2">
+    <div className=" grid grid-cols-2 gap-10 flex-1">
       {recipes.map((res,id) => (
         <Recipe recipe={res} key={id}></Recipe>
       ))}

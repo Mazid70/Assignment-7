@@ -11,16 +11,16 @@ const Recipe = ({ recipe }) => {
     calories,
   } = recipe;
   return (
-    <div className=" border text-left flex flex-col justify-center items-center">
+    <div className=" border text-left flex flex-col justify-center items-center shadow-xl p-10 gap-4 rounded-xl">
       <div>
-        <img className="h-[200px] w-[330px]" src={recipe_image} alt="" />
+        <img className="h-[200px] w-[330px] rounded-xl" src={recipe_image} alt="" />
       </div>
-      <div>
+      <div className="space-y-4">
         <h1 className=" text-xl font-semibold">{recipe_name}</h1>
         <p className=" font-normal text-base text-[#878787]">
           {short_description}
         </p>
-        <hr />
+        <hr  className="my-10"/>
         <h1 className="text-lg font-semibold">
           Ingredients:{ingredients.length}
         </h1>

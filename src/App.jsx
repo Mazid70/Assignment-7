@@ -1,7 +1,7 @@
 import "./App.css";
-import Banner from "./assets/components/Banner/Banner";
-import Header from "./assets/components/Header/Header";
-import OurRecipes from "./assets/components/OurRecipes/OurRecipes";
+import Banner from "./components/Banner/Banner";
+import Header from "./components/Header/Header";
+import OurRecipes from "./components/OurRecipes/OurRecipes";
 
 function App() {
   return (

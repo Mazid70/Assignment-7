@@ -1,4 +1,5 @@
 import AllRecipe from "../AllRecipe/AllRecipe";
+import WantToCook from "../WantToCook/WantToCook";
 
 const OurRecipes = () => {
   return (
@@ -11,8 +12,9 @@ const OurRecipes = () => {
           elementum mauris aenean neque.
         </p>
       </div>
-      <div>
+      <div className="flex gap-20 mt-10">
         <AllRecipe></AllRecipe>
+        <WantToCook></WantToCook>
       </div>
     </section>
   );
