@@ -1,7 +1,7 @@
 import { CiClock2 } from "react-icons/ci";
 import { PiFireSimple } from "react-icons/pi";
 import PropTypes from "prop-types";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, addRecipe }) => {
   const {
     recipe_name,
     recipe_image,
@@ -13,14 +13,18 @@ const Recipe = ({ recipe }) => {
   return (
     <div className=" border text-left flex flex-col justify-center items-center shadow-xl p-10 gap-4 rounded-xl">
       <div>
-        <img className="h-[200px] w-[330px] rounded-xl" src={recipe_image} alt="" />
+        <img
+          className="h-[200px] w-[330px] rounded-xl"
+          src={recipe_image}
+          alt=""
+        />
       </div>
       <div className="space-y-4">
         <h1 className=" text-xl font-semibold">{recipe_name}</h1>
         <p className=" font-normal text-base text-[#878787]">
           {short_description}
         </p>
-        <hr  className="my-10"/>
+        <hr className="my-10" />
         <h1 className="text-lg font-semibold">
           Ingredients:{ingredients.length}
         </h1>
@@ -40,7 +44,10 @@ const Recipe = ({ recipe }) => {
           {calories}calories
         </p>
       </div>
-      <button className="px-5 py-3 rounded-full text-black bg-green-500 text-xl font-semibold">
+      <button
+        onClick={() => addRecipe(recipe)}
+        className="px-5 py-3 rounded-full text-black bg-green-500 text-xl font-semibold"
+      >
         Want to Cook
       </button>
     </div>
@@ -48,5 +55,6 @@ const Recipe = ({ recipe }) => {
 };
 Recipe.propTypes = {
   recipe: PropTypes.object,
+  addRecipe: PropTypes.func,
 };
 export default Recipe;

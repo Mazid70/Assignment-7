@@ -1,22 +1,84 @@
-const WantToCook = () => {
+import PropTypes from "prop-types";
+import AddRecipe from "../AddRecipe/AddRecipe";
+import Currentlycooking from "../Currentlycooking/Currentlycooking";
+import { useState } from "react";
+
+const WantToCook = ({ recipe, count, decrease }) => {
+  const [reci, setrci] = useState([]);
+  const [Ccount, setCcount] = useState(0);
+  const [num, setNum] = useState(0);
+  const [numTwo, setNumTwo] = useState(0);
+  const addCurrent = (res, number, numtwo) => {
+    const newReci = [...reci, res];
+    setrci(newReci);
+    setCcount(Ccount + 1);
+    setNum(num + number);
+    setNumTwo(numTwo + numtwo);
+  };
+
   return (
     <div className="w-[40%] border rounded-xl p-10">
-      <h1 className="font-semibold text-xl ">Want to cook:</h1>
+      <h1 className="font-semibold text-xl ">Want to cook:{count}</h1>
       <hr className="my-6 " />
-      <div className="flex">
-        <p className="ml-10 text-[#878787]">Name</p>
-        <p className=" ml-32 text-[#878787]">Time</p>
-        <p className="ml-16 text-[#878787]">Calories</p>
-      </div>
-      <div className="flex justify-between items-center gap-10 bg-[#28282808] -ml-10 -mr-10 p-2 mt-5">
-        <p className="ml-5">1</p>
-        <p className="text-[#878787]">A quick and delicious chicken stir fry with vegetables.</p>
-        <p className="text-[#878787]">25minutes</p>
-        <p className="text-[#878787]">250caloriess</p>
-        <button className="px-5 py-3 rounded-full text-black bg-green-500 text-base font-medium">Preparing</button>
-      </div>
+      <table className="w-full ">
+        <thead>
+          <tr>
+            <th colSpan={2}>Name</th>
+            <th>Time</th>
+            <th>Calories</th>
+          </tr>
+        </thead>
+        <br />
+        <tbody>
+          {recipe.map((res, id) => (
+            <AddRecipe
+              key={id}
+              recipe={res}
+              decrease={decrease}
+              addCurrent={addCurrent}
+            ></AddRecipe>
+          ))}
+        </tbody>
+      </table>
+      <h1 className="font-semibold text-xl mt-10">
+        Currently cooking:{Ccount}
+      </h1>
+      <hr className="my-6 " />
+      <table className="w-full ">
+        <thead>
+          <tr>
+            <th colSpan={2}>Name</th>
+            <th>Time</th>
+            <th>Calories</th>
+          </tr>
+        </thead>
+        <br />
+        <tbody>
+          {reci.map((res, id) => (
+            <Currentlycooking key={id} res={res}></Currentlycooking>
+          ))}
+        </tbody>
+        <br />
+        <tfoot className="p-10">
+          <tr>
+            <td colSpan={2}></td>
+            <td>
+              Total Time = <br />
+              {num} minutes
+            </td>
+            <td>
+              Total Calories = <br />
+              {numTwo} calories
+            </td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   );
 };
-
+WantToCook.propTypes = {
+  recipe: PropTypes.array,
+  count: PropTypes.number,
+  decrease: PropTypes.func,
+};
 export default WantToCook;

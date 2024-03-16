@@ -9,12 +9,16 @@ const Banner = () => {
       </h1>
       <p>
         Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
-        Database and solve 500+ coding <br /> problems to become an exceptionally well
-        world-class Programmer.
+        Database and solve 500+ coding <br /> problems to become an
+        exceptionally well world-class Programmer.
       </p>
       <div className="flex gap-6 justify-center">
-        <button className="px-5 py-3 rounded-full text-black bg-green-500 text-xl font-semibold">Explore Now</button>
-        <button className="px-5 py-3 rounded-full text-white  text-xl font-semibold border-2">Our Feedback</button>
+        <button className="px-5 py-3 rounded-full text-black bg-green-500 text-xl font-semibold">
+          Explore Now
+        </button>
+        <button className="px-5 py-3 rounded-full text-white  text-xl font-semibold border-2">
+          Our Feedback
+        </button>
       </div>
     </section>
   );
