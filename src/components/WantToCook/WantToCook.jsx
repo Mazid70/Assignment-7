@@ -37,6 +37,7 @@ const WantToCook = ({ recipe, count, decrease, handleButtonClick }) => {
               decrease={decrease}
               addCurrent={addCurrent}
               handleButtonClick={handleButtonClick}
+              index={id}
             ></AddRecipe>
           ))}
         </tbody>
@@ -56,7 +57,7 @@ const WantToCook = ({ recipe, count, decrease, handleButtonClick }) => {
         <br />
         <tbody>
           {reci.map((res, id) => (
-            <Currentlycooking key={id} res={res}></Currentlycooking>
+            <Currentlycooking key={id} res={res} index={id}></Currentlycooking>
           ))}
         </tbody>
         <br />

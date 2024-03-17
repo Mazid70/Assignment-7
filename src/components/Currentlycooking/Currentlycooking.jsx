@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-const Currentlycooking = ({ res }) => {
-  const { recipe_id, recipe_name, preparing_time, calories } = res;
+const Currentlycooking = ({ res, index }) => {
+  const { recipe_name, preparing_time, calories } = res;
 
   return (
     <tr className="bg-[#28282808] text-[#282828B3]">
-      <td className="text-black">{recipe_id}</td>
+      <td className="text-black">{index + 1}</td>
       <td>{recipe_name}</td>
       <td>{preparing_time}minutes</td>
       <td>{calories}calories</td>
@@ -13,5 +13,6 @@ const Currentlycooking = ({ res }) => {
 };
 Currentlycooking.propTypes = {
   res: PropTypes.array,
+  index: PropTypes.number,
 };
 export default Currentlycooking;

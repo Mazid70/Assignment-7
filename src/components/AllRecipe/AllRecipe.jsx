@@ -12,7 +12,7 @@ const AllRecipe = ({ addRecipe }) => {
   return (
     <div className=" grid sm:grid-cols-1 lg:grid-cols-2 gap-10 flex-1">
       {recipes.map((res, id) => (
-        <Recipe recipe={res} key={id} addRecipe={addRecipe}></Recipe>
+        <Recipe recipe={res} key={id} index={id} addRecipe={addRecipe}></Recipe>
       ))}
     </div>
   );
