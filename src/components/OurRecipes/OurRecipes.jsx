@@ -40,14 +40,14 @@ const OurRecipes = () => {
     <section className="text-center mt-10">
       <div>
         <h1 className="font-semibold text-4xl">Our Recipes</h1>
-        <p className="mt-5">
+        <p className="mt-5 text-[#150B2B99]">
           Welcome to Our Recipes. Discover a diverse selection of culinary
-          delights, ranging from comforting classics to <br />
-          innovative creations. Let us inspire your next culinary adventure!
+          delights, ranging from comforting classics <br /> to innovative
+          creations. Let us inspire your next culinary adventure!
         </p>
       </div>
       <ToastContainer />
-      <div className="flex gap-20 mt-10">
+      <div className="flex flex-col sm:flex-col lg:flex-row gap-20 mt-10">
         <AllRecipe addRecipe={addRecipe}></AllRecipe>
         <WantToCook
           recipe={recipe}

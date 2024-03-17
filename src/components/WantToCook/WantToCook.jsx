@@ -17,12 +17,12 @@ const WantToCook = ({ recipe, count, decrease, handleButtonClick }) => {
   };
 
   return (
-    <div className="w-[40%] border rounded-xl p-10">
+    <div className="lg:w-[40%] border rounded-xl lg:p-10">
       <h1 className="font-semibold text-xl ">Want to cook:{count}</h1>
       <hr className="my-6 " />
       <table className="w-full table-auto">
         <thead>
-          <tr>
+          <tr className="h-10">
             <th colSpan={2}>Name</th>
             <th>Time</th>
             <th>Calories</th>

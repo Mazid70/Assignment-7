@@ -11,7 +11,7 @@ const Recipe = ({ recipe, addRecipe }) => {
     calories,
   } = recipe;
   return (
-    <div className=" border text-left flex flex-col justify-center items-center shadow-xl p-10 gap-4 rounded-xl">
+    <div className=" border text-left flex flex-col justify-center items-center lg:shadow-xl p-10 gap-4 rounded-xl">
       <div>
         <img
           className="h-[200px] w-[330px] rounded-xl"
@@ -33,7 +33,9 @@ const Recipe = ({ recipe, addRecipe }) => {
             <li key={id}>{ind}</li>
           ))}
         </ul>
+        <hr />
       </div>
+
       <div className="flex justify-between w-full">
         <p className=" font-normal text-base text-[#878787] flex items-center gap-2">
           <CiClock2></CiClock2>

@@ -10,7 +10,7 @@ const AllRecipe = ({ addRecipe }) => {
       .then((data) => setRecipes(data));
   }, []);
   return (
-    <div className=" grid grid-cols-2 gap-10 flex-1">
+    <div className=" grid sm:grid-cols-1 lg:grid-cols-2 gap-10 flex-1">
       {recipes.map((res, id) => (
         <Recipe recipe={res} key={id} addRecipe={addRecipe}></Recipe>
       ))}
