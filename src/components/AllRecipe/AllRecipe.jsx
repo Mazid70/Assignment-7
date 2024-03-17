@@ -5,7 +5,7 @@ import Recipe from "../Recipe/Recipe";
 const AllRecipe = ({ addRecipe }) => {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
-    fetch("recipe.json")
+    fetch("./recipe.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);

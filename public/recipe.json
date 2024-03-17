@@ -66,7 +66,7 @@
     {
         "recipe_id": 5,
         "recipe_name": "Banana Smoothie",
-        "recipe_image": "banana_smoothie.jpg",
+        "recipe_image": "https://i.ibb.co/vZz7pB3/banana-smoothie-1200-square-519-500x500.jpg",
         "short_description": "A creamy and refreshing smoothie made with bananas and yogurt.",
         "ingredients": [
             "2 ripe bananas",
@@ -82,7 +82,7 @@
     {
         "recipe_id": 6,
         "recipe_name": "Vegetable Soup",
-        "recipe_image": "vegetable_soup.jpg",
+        "recipe_image": "https://i.ibb.co/CP2dymG/nourishing-vegetable-soup-10-500x500.jpg",
         "short_description": "A hearty vegetable soup packed with nutritious ingredients.",
         "ingredients": [
             "1 onion, chopped",

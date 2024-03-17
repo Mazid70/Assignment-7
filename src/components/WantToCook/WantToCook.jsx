@@ -3,7 +3,7 @@ import AddRecipe from "../AddRecipe/AddRecipe";
 import Currentlycooking from "../Currentlycooking/Currentlycooking";
 import { useState } from "react";
 
-const WantToCook = ({ recipe, count, decrease }) => {
+const WantToCook = ({ recipe, count, decrease, handleButtonClick }) => {
   const [reci, setrci] = useState([]);
   const [Ccount, setCcount] = useState(0);
   const [num, setNum] = useState(0);
@@ -20,7 +20,7 @@ const WantToCook = ({ recipe, count, decrease }) => {
     <div className="w-[40%] border rounded-xl p-10">
       <h1 className="font-semibold text-xl ">Want to cook:{count}</h1>
       <hr className="my-6 " />
-      <table className="w-full ">
+      <table className="w-full table-auto">
         <thead>
           <tr>
             <th colSpan={2}>Name</th>
@@ -36,6 +36,7 @@ const WantToCook = ({ recipe, count, decrease }) => {
               recipe={res}
               decrease={decrease}
               addCurrent={addCurrent}
+              handleButtonClick={handleButtonClick}
             ></AddRecipe>
           ))}
         </tbody>
@@ -46,7 +47,7 @@ const WantToCook = ({ recipe, count, decrease }) => {
       <hr className="my-6 " />
       <table className="w-full ">
         <thead>
-          <tr>
+          <tr className="">
             <th colSpan={2}>Name</th>
             <th>Time</th>
             <th>Calories</th>
@@ -59,7 +60,7 @@ const WantToCook = ({ recipe, count, decrease }) => {
           ))}
         </tbody>
         <br />
-        <tfoot className="p-10">
+        <tfoot>
           <tr>
             <td colSpan={2}></td>
             <td>
@@ -80,5 +81,6 @@ WantToCook.propTypes = {
   recipe: PropTypes.array,
   count: PropTypes.number,
   decrease: PropTypes.func,
+  handleButtonClick: PropTypes.func,
 };
 export default WantToCook;
